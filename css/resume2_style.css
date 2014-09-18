@@ -31,7 +31,9 @@ body{
 		margin: auto  
 	} 
 } 
-
+/***********************************************************
+			HEADER
+***********************************************************/
 #header{
 	margin: auto; 
 	width: 990px; 
@@ -60,7 +62,8 @@ body{
 @media only screen and (max-width: 556px){
 	#header div h1{
 		display: block;
-		margin: auto  
+		margin: auto;
+		text-align: center;   
 	} 
 } 
 @media only screen and (max-width: 556px){
@@ -74,8 +77,6 @@ body{
 
 /* tablets */
 /* need to change text alignment and display */
-
-
 
 #first{
 	clear: left;
@@ -102,5 +103,16 @@ body{
 	max-height: 75px; 
 	border-radius: 50%; 
 	box-shadow: 10px; 
-left: -500px;
+	left: -500px;
 }
+
+
+/***********************************************************
+			SECTIONS 
+***********************************************************/
+
+
+
+
+
+
