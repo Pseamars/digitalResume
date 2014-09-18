@@ -1,0 +1,139 @@
+
+
+body{
+	width: 90%; 
+	margin: auto; 
+	color: black; 
+	font: 1.1em/1.5 sans-serif;
+}
+
+header {
+  float: left;
+  margin: 0 0 20px 0;
+  padding: 5px 0 0 0;
+  width: 100%; 
+  background: lightblue; 
+}
+
+nav {
+  text-align:center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px; 
+    padding: 0;
+}
+
+nav a {
+    font-weight:800; 
+    padding: 15px 10px;
+    display: block;
+    text-decoration: none;
+    transition: 100ms;
+    transform: translatez(0px);
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    border-radius: 50%;
+}
+
+nav a:hover{
+    transform: translatez(25px) rotate(3deg);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    
+}
+
+.up {
+	background-image: url("button_up.png"); 
+	width: 25px;
+	height: 25px;
+}
+
+.down{
+	background-image: url("button_down.png"); 
+	width: 25px;
+	height: 25px;	
+}
+
+.icon{
+	max-width: 50px;
+	max-height: 50px;
+	padding: 10px 5px;
+	box-shadow: 5px; 
+}
+
+#profile_pic{
+	position: center absolute;
+	display: block; 
+
+}
+
+
+/*   
+******************************************
+		BACKGROUND IMAGES
+******************************************
+*/
+
+.bg_img {
+	height: 300px;
+	width: 90%;
+	padding: 10px 10%;
+	margin: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}
+
+.bg_img[background-image*="url"]{
+	opacity: .9;
+}
+
+
+/*   
+******************************************
+		BACKGROUND IMAGES
+******************************************
+*/
+
+
+#pinwheel{
+	height:500px;
+	width: 500px;
+	border-radius: 50%;
+	background: gray;
+	border: 1px solid black;
+
+}
+
+#pinwheel li{
+   position:absolute;
+   display: inline-block;
+   list-style:none;
+   width:20%;
+   text-align:center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

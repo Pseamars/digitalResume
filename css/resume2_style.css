@@ -1,0 +1,106 @@
+* {
+	border: 1px dotted ;
+}
+
+body{
+	max-width: 1050px;
+	margin: auto; 
+} 
+
+/* phones */
+@media only screen and (max-width: 556px){
+	body, #header{
+		max-width: 95%;
+		margin:auto; 
+
+	} 
+} 
+
+/* tablets */
+
+@media only screen and (min-width: 769px){
+	body, #header{
+		max-width: 1000px;
+		margin: auto  
+	} 
+} 
+
+@media only screen and (min-width: 557px) and (max-width: 786px){
+	body, #header{
+		max-width: 750px;
+		margin: auto  
+	} 
+} 
+
+#header{
+	margin: auto; 
+	width: 990px; 
+	height: 100%;	
+	background: lightgray;
+}
+@media only screen and (max-width: 556px){
+	#header {
+		max-width: 95%;
+		margin: auto;
+	} 
+} 
+
+#header div{
+	width:100%;
+}
+#header div h1{ /* I want to get the h1s to align center to the div */
+	margin: auto;
+	padding: 10px 25px;
+	font-weight: bold;
+	display: inline-block;
+	width:40%;	
+	font-size: 2em;
+}
+/* phones */
+@media only screen and (max-width: 556px){
+	#header div h1{
+		display: block;
+		margin: auto  
+	} 
+} 
+@media only screen and (max-width: 556px){
+	#header div img{
+		display: block;
+		margin: auto 150px;
+		max-width: 30%; 
+
+	} 
+} 
+
+/* tablets */
+/* need to change text alignment and display */
+
+
+
+#first{
+	clear: left;
+	color: black;
+	text-align: right;
+	background: gray;
+	border-radius: 45% 45% 0% 0%;
+}
+
+#last{
+	clear: right;
+	color: lightgray; 
+	text-align: left;
+	background: gray;
+	border-radius: 45% 45% 0% 0%;
+}
+
+#profile_pic{
+	display: inline-block;
+	padding: 2px;
+	position: relative;
+	clear: both;
+	max-width: 10%; 
+	max-height: 75px; 
+	border-radius: 50%; 
+	box-shadow: 10px; 
+left: -500px;
+}
