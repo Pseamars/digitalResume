@@ -1,0 +1,59 @@
+/**********************************************************
+		PHONES	
+**********************************************************/
+
+@media only screen and (max-width: 556px){
+	#header {
+		max-width: 100%;
+		margin: auto;
+	} 
+} 
+
+
+@media only screen and (max-width: 556px){
+	#header div h1{
+		display: block;
+		margin: auto;
+		text-align: center;   
+		font-size: 2em;
+	} 
+} 
+@media only screen and (max-width: 556px){
+	#header div img{
+		display: block;
+		margin: auto 150px;
+		max-width: 30%; 
+
+	} 
+} 
+
+/* phones */
+@media only screen and (max-width: 556px){
+	body, #header{
+		max-width: 95%;
+		margin:auto; 
+
+	} 
+} 
+
+
+/**********************************************************
+		TABLETS	
+**********************************************************/
+/* tablets */
+/* need to change text alignment and display */
+
+@media only screen and (min-width: 769px){
+	body, #header{
+		max-width: 100%;
+		margin: auto  
+	} 
+} 
+
+@media only screen and (min-width: 557px) and (max-width: 786px){
+	body, #header{
+		max-width: 750px;
+		margin: auto  
+	} 
+}
+

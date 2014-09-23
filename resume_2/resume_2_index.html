@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/resume2_style.css">
+		<link rel="stylesheet" type="text/css" href="../css/mediaqueries.css">
 		<title>Patrick Seamars | The right guy for the job</title>
 	</head>
 	<body id="dummybodyid">
@@ -11,8 +12,15 @@
 				<div>
 					<h1 id="first">Patrick</h1>
 					<img src="../img/profile_photo_nerd.jpg" id="profile_pic">
-					<h1 id="last">Seamars</h1>
+					<h1 id="last">Seamars</h1>					
 				</div>
+				<nav id="header_nav">
+						<a href="#skillz">Skills and Strengths</a>
+						<a href="#experience">Experience</a>
+						<a href="#education">Education</a>
+						<a href="#dev_stack">Development Stack</a>
+						<a href="#about">About Me</a>
+					</nav>
 			</header>
 			<div id="goal"></div> <!-- My goal as a developer  -->
 			<div id="quote"></div> <!-- <div id="slogan" cite="http://publicquotes.com/quote/42873/in-every-one-of-us-there-are-two-ruling-and-directing-principles-whose-guidance-we-follow-wherever-they.html"><q>In every one of us there are two ruling and directing principles, whose guidance we follow wherever they may lead; the one being an innate desire of pleasure; the other, an acquired judgment which aspires after excellence.</q> -Socrates</div>   -->
@@ -27,14 +35,24 @@
 			</nav>	
 			-->
 
-			<section id="skillz" ></section> <!-- Badges with light box 
+			<section id="skillz" class="sections">
+				<div id="description_container"></div>
+				<div id="badge_container">
+					<div class="skillz_badge"></div>
+					<div class="skillz_badge"></div>
+					<div class="skillz_badge"></div>
+					<div class="skillz_badge"></div>
+					<div class="skillz_badge"></div>
+				</div>
+			</section> <!-- Badges with light box 
 			-->
-			<section id="experience" ></section> <!-- Incorporate education and experience into one timeline? Different colors? 
+			<section id="experience" class="sections"></section> 
+			<img src="../backgrounds/dark_fish_skin.png" class="bgs"><!-- Incorporate education and experience into one timeline? Different colors? 
 			-->
-			<section id="education" ></section> 
-			<section id="dev_stack" ></section> <!-- Pie Chart or gauge.js
+			<section id="education" class="sections" style="bac"></section> 
+			<section id="dev_stack"  class="sections" ></section> <!-- Pie Chart or gauge.js
 			-->
-			<section id="about" ></section> <!-- Add twitter feed 
+			<section id="about" class="sections" ></section> <!-- Add twitter feed 
 			-->
 
 
