@@ -2,6 +2,8 @@
 	border: 1px dotted ;
 }*/
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+
 body{
 	max-width: 100%;
 	margin: auto; 
@@ -105,30 +107,36 @@ body{
 /***********************************************************
 			Quote and Goal 
 ***********************************************************/
-	/*.goal, .quote{
+	#goal, #quote {
 		width: 100%; 
 		height: 300px;
-	}*/
+		background: khaki;
+	}
 
 /***********************************************************
 			Skillz 
 ***********************************************************/
 
-/*#description_container{
-	width: 80%; 
-	height: 70%; 
-	background: blue;
-	margin: 100px auto; 
-	position: absolute;
+#skillz{
+	padding: 20px; 
+	margin:  auto;
+}
 
-}*/
+#description_container{
+	width: 80%; 
+	height: 350px; 
+	background: blue;
+	margin: 10px auto; 
+	padding: 40px 20px;
+	position: relative;
+}
 
 
 #badge_container{
-	width: 50%;
+	width: 90%;
 	height: 100px;
-	margin: 350px auto; 
-	padding: 5px;
+	margin: auto; 
+	padding: 25px;
 
 }
 
@@ -137,13 +145,23 @@ body{
 	height: 100%;
 	background: #536DC2; 
 	border-radius: 50%; 
-	box-shadow: 10px 10px 5px black;
+	box-shadow: 10px 10px 2px black;
 	display: inline-block;
 	padding: 0 10px;
-	margin-right: 10px;
+	margin: 0px 10px;
+	left:100px;
 	position: relative;
+	text-align: center; 
+	line-height: 100px;
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 1.25em;
 }
 
+.skillz_badge:hover{
+	transition-duration: 0.3s;
+	transition-property:transform;
+	transform: scale(1.1);
+}
 
 
 

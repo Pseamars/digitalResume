@@ -9,7 +9,10 @@ $("#profile_pic").css("left", "-700px").animate(
 	});
 
 
+// $('.skillz_badge').hover(function () {
+// 	$(this).css(); 
 	
+// });
  
 
 

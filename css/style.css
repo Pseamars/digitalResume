@@ -44,17 +44,6 @@ nav a:hover{
     
 }
 
-.up {
-	background-image: url("button_up.png"); 
-	width: 25px;
-	height: 25px;
-}
-
-.down{
-	background-image: url("button_down.png"); 
-	width: 25px;
-	height: 25px;	
-}
 
 .icon{
 	max-width: 50px;
