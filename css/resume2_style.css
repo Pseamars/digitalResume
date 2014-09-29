@@ -38,7 +38,7 @@ body{
 	font-weight: bold;
 	display: inline-block;
 	width:40%;	
-	font-size: 4em;
+	font-size: 3em;
 	vertical-align: top;
 }
 
@@ -77,9 +77,11 @@ body{
 	margin: 75px auto;
 	text-align: center;
 	width: 18%;
-	padding: 2px;
+	padding: 2px 4px;
 	border-right: 1px solid black;
 	text-decoration: none;
+	font-size: 1.2em; 
+	font-family: 
 }
 
 #header_nav a:last-Child{
@@ -91,7 +93,7 @@ body{
 ***********************************************************/
 
 .sections{
-	background: grey; 
+	background: ; 
 	height: 500px; 
 	width: 100%; 
 }
@@ -107,12 +109,55 @@ body{
 /***********************************************************
 			Quote and Goal 
 ***********************************************************/
-	#goal, #quote {
+	#goalContainer, #quoteContainer {
 		width: 100%; 
-		height: 300px;
+		height: 500px;
 		background: khaki;
+		padding: 10px 10px;
 	}
 
+	.s1h1{
+		font-size: 1.5em;
+		color: red;
+		margin: auto;
+	}
+
+	#goal, #quote{
+		width: 45%; 
+		height: 85%;
+		margin: 10px 10px; 
+		padding: 5px; 
+		display: inline-block;
+		font-size: 2em; 
+		font-family: Comic Sans; 
+		vertical-align: top;
+	}
+
+	#quote{
+		border-left: solid 1px black;
+		padding-left: 40px;
+	}
+
+	.bqStart{
+		float: left;
+	    height: 30px;
+	    margin: -50px -20px 20px 10px;
+	    padding: 5px;
+	    font-size: 5em;
+	    color:rgba(155, 144, 144, 0.57);
+	    z-index: 98;
+ }
+
+	 .bqEnd{
+	 	float: right;
+	    height: 25px;
+	    margin: -100px 185px 0px 0px;
+	    font-size: 8em;
+	    color:rgba(155, 144, 144, 0.57);
+	    z-index: 99;
+ }
+
+ 	
 /***********************************************************
 			Skillz 
 ***********************************************************/

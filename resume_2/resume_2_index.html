@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/resume2_style.css">
 		<link rel="stylesheet" type="text/css" href="../css/mediaqueries.css">
+		
 		<title>Patrick Seamars | The right guy for the job</title>
 	</head>
 	<body id="dummybodyid">
@@ -22,18 +23,28 @@
 						<a href="#about">About Me</a>
 					</nav>
 			</header>
-			<div id="goal"></div> <!-- My goal as a developer  -->
-			<div id="quote"></div> <!-- <div id="slogan" cite="http://publicquotes.com/quote/42873/in-every-one-of-us-there-are-two-ruling-and-directing-principles-whose-guidance-we-follow-wherever-they.html"><q>In every one of us there are two ruling and directing principles, whose guidance we follow wherever they may lead; the one being an innate desire of pleasure; the other, an acquired judgment which aspires after excellence.</q> -Socrates</div>   -->
+			<div id="goalContainer">
+					<div id="goal"><h1 class="s1h1">My personal Mission Statement</h1>
+							<blockquote>
+							<span class="bqStart">&#8220; I </span> view learning and teaching as not being mutually exclusive 
+							but rather occuring eternally, fluidly and simultaneously.
+							I aim to use the most effective and efficient tools to help others understand this relationship <span class="bqEnd">&#8221;</span></blockquote></div>
+			 <!-- My goal as a developer  -->
+			
+				<div id="quote"><h1 class="s1h1">Words to live by</h1>
+							<blockquote cite="http://publicquotes.com/quote/42873/in-every-one-of-us-there-are-two-ruling-and-directing-principles-whose-guidance-we-follow-wherever-they.html">
+							<span class="bqStart">&#8220; In </span> every one of us there are two ruling and directing principles, whose guidance we follow wherever they may lead; the one being an innate desire of pleasure; the other, an acquired judgment which aspires after excellence. <span class="bqEnd">&#8221;</span>
+							</blockquote></div>
+			</div>
 
-			<!-- Not quite ready for this 
-			<nav>
+			<!-- <nav>
 				<a href="#skillz">Skills and Strengths</a>
 				<a href="#experience">Experience</a>
 				<a href="#education">Education</a>
 				<a href="#dev_stack">Development Stack</a>
 				<a href="#about">About Me</a>
 			</nav>	
-			-->
+			--> -->
 
 			<section id="skillz" class="sections">
 				<div id="description_container"></div>
@@ -46,10 +57,15 @@
 				</div>
 			</section> <!-- Badges with light box 
 			-->
-			<section id="experience" class="sections"></section> 
+			<section id="experience" class="sections" >
+				<div id="timesheet"></div>
+			</section> 
 			<!-- Incorporate education and experience into one timeline? Different colors? 
 			-->
-			<section id="education" class="sections" ></section> 
+			<section id="education" class="sections" >
+				
+
+			</section> 
 			<section id="dev_stack"  class="sections" ></section> <!-- Pie Chart or gauge.js
 			-->
 			<section id="about" class="sections" ></section> <!-- Add twitter feed 
@@ -59,6 +75,7 @@
 		</div>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="resume_2_script.js"></script>
+	<script type="text/javascript" src="../script/resume_2_script.js"></script>
+
 	</body>
 </html>
