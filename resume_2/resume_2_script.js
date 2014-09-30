@@ -14,7 +14,7 @@ $("#profile_pic").css("left", "-700px").animate(
 	
 // });
  
-
+$("#goalContainer").fadeIn(2000, function(){});
 
 
 

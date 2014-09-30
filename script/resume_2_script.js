@@ -14,7 +14,15 @@ $("#profile_pic").css("left", "-700px").animate(
 	
 // });
  
+$("#goalContainer").fadeIn(2000, function(){
+	console.log("I am done animating")
+});
 
 
 
+$(init);
+
+function init () {
+	$("#description_container").load("../skillzFiles/bilingual.html");
+}
 
