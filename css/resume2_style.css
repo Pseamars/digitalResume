@@ -2,11 +2,12 @@
 	border: 1px dotted ;
 }*/
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Cantata+One|Amatic+SC);
 
 body{
 	max-width: 100%;
 	margin: auto; 
+	font-family: 'Cantata One', serif;
 } 
 
 #wrapper {
@@ -23,6 +24,7 @@ body{
 	height: 100px;	
 	background: rgba(40,40,40,.7);
 	color: antiquewhite; 
+	font-family: 'Amatic SC', cursive;
 }
 
 
@@ -31,7 +33,7 @@ body{
 	height: 100px;
 	position: fixed;
 	z-index: 1000;
-	background: rgba(40,40,40,.3)
+	background: rgba(40,40,40,.3);
 }
 #header div h1{ /* I want to get the h1s to align center to the div */
 	margin: auto;
@@ -39,7 +41,7 @@ body{
 	font-weight: bold;
 	display: inline-block;
 	width:40%;	
-	font-size: 3em;
+	font-size: 4em;
 	vertical-align: top;
 }
 
@@ -75,15 +77,16 @@ body{
 #header_nav a{
 	display: inline-block;
 	position: relative;
-	margin: 75px auto;
+	margin: 125px auto 0px 10px;
 	text-align: center;
-	width: 18%;
+	width: 23%;
 	padding: 2px 4px;
 	border-right: 1px solid black;
 	text-decoration: none;
-	color: white;
-	font-size: 1.2em; 
-	font-family: 
+	color: white;	
+	background: rgba(40,40,40,.3);
+	font-size: 1.35em; 
+	font-family: 'Cantata One', serif;
 	z-index:101;
 }
 
@@ -122,7 +125,7 @@ body{
 	}
 
 	#mission, #words{
-		font-size: 2.5em;
+		font-size: 2em;
 		color: antiquewhite;
 		width: 48%;
 		display: inline-block;
@@ -144,11 +147,10 @@ body{
 		height: 75%;
 		margin: 30px; 
 		padding: 15px; 
-		font-size: 2em; 
+		font-size: 1.75em; 
 		display: inline-block;
-		font-family: Comic; 
 		font-weight: bold;
-		line-height: 1.5em;
+		line-height: 1.25em;
 		vertical-align: top;
 		background: rgba(122,122,122,.6);
 		border-radius: 15%;
@@ -227,8 +229,7 @@ body{
 	left:100px;
 	position: relative;
 	text-align: center; 
-	line-height: 100px;
-	font-family: 'Source Sans Pro', sans-serif; 
+	line-height: 100px; 
 	font-size: 1.25em;
 }
 

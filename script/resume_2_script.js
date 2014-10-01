@@ -18,11 +18,23 @@ $("#goalContainer").fadeIn(2000, function(){
 	console.log("I am done animating")
 });
 
+var loadSkillz = function(skill) {
 
 
-$(init);
+$.ajax({
+  url: "../skillzFiles/"+skill+".html",
+  success: function(anything){
+ 	$("#description_container").html(anything);
+  }
+});
 
-function init () {
-	$("#description_container").load("../skillzFiles/bilingual.html");
+
+// $('#description_container > div').hide()
+// $('#description_container > div[name=' + skill + ']').show()
+
 }
 
+//Attach events
+$('#badge_container').on('click','button.skillz_badge',function(){
+	loadSkillz($(this).attr('name'));
+});
