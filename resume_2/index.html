@@ -3,16 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/resume2_style.css">
-		<link rel="stylesheet" type="text/css" href="../css/mediaqueries.css">
+		<link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/timeline.css">
+		<!-- <link rel="stylesheet" type="text/css" href="../dist/timesheet.css"></link> -->
 		
 		<title>Patrick Seamars | The right guy for the job</title>
 	</head>
+	
 	<body id="dummybodyid">
 		<div id="wrapper">
 			<header id="header">
 				<div>
 					<h1 id="first">Patrick</h1>
-					<img src="../img/profile_photo_nerd.jpg" id="profile_pic">
+					<img src="img/profile_photo_nerd.jpg" id="profile_pic">
 					<h1 id="last">Seamars</h1>					
 				</div>
 				<nav id="header_nav">
@@ -43,19 +47,65 @@
 					<h1>Click a button to see my skillz!</h1>
 				</div>
 				<div id="badge_container">
-					<button class="skillz_badge" name="bilingual">Bilingual</button>
+					<button class="skillz_badge"  name="bilingual">Bilingual</button>
 					<button class="skillz_badge" name="directed">Self-directed</button>
 					<button class="skillz_badge" name="risky">Risk-taking</button>
 					<button class="skillz_badge" name="communication">Communication</button>
 					<button class="skillz_badge" name="organization">Organization</button>
 				</div>
-			</section> <!-- Badges with light box 
-			-->
-			<section id="experience" class="sections" >
-				<div id="timesheet"></div>
 			</section> 
-			<!-- Incorporate education and experience into one timeline? Different colors? 
-			-->
+			
+			<!-- Begin Timeline -->
+			<section id="experience" class="sections" >
+			<div id="overlay">Click me</div>
+			<h1>My Experience</h1>	
+			<div id="timelineContainer">
+				<ul id="lifeEvents" class="hover">
+					<li  id="dob" class="circle"></li>
+					<li class="box" id="tuscany" style="background-color: red">Tuscany Tavern</li>
+					<li class="box"id="keg" style="background-color: blue">The Keg</li>
+					<li id="natasha" class="circle" ></li>
+					<li class="box" id="jefferson" style="background-color: green">Jefferson High</li>
+					<li class="box" id="manual" style="background-color: yellow">Manual High</li>
+					<li class="box" id="metro" style="background-color: yellow">MSUD</div></li>
+				</ul>
+			<div id="timeline">
+				<ul>
+					<li><strong>1986</strong></li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li><strong>1990</strong></li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li><strong>1995</strong></li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li><strong>2000</strong></li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li><strong>2005</strong></li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li><strong>2010</strong></li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li>|</li>
+					<li><strong>2015</strong></li>
+				</ul>
+			</div>
+		</div>
+			</section> <!-- End Timeline -->
+			
 
 			<section id="dev_stack"  class="sections" ></section> <!-- Pie Chart or gauge.js
 			-->
@@ -64,9 +114,12 @@
 
 
 		</div>
+	<!-- Scripts -->	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="../script/resume_2_script.js"></script>
+	<script type="text/javascript" src="script/resume_2_script.js"></script>
+	<script type="text/javascript" src="script/timeline.js"></script>
+	<script type="text/javascript" src="script/jquery-ui.js"></script>
 
 	</body>
 </html>

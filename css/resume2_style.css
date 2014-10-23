@@ -33,8 +33,15 @@ body{
 	height: 100px;
 	position: fixed;
 	z-index: 1000;
+	top:0;
+	transition: top 0.2 ease-in-out;
 	background: rgba(40,40,40,.3);
 }
+
+.nav-up{
+	top: -100px;
+}
+
 #header div h1{ /* I want to get the h1s to align center to the div */
 	margin: auto;
 	padding: 10px 25px;
@@ -45,8 +52,21 @@ body{
 	vertical-align: top;
 }
 
+/*#experience h1{
+	width: 100%;
+	font-size: 3em;
+	position: absolute;
+	margin: auto; 
+	padding: 25px;
+	text-align: center;*/
 
-
+/*#experience h1{
+		margin: auto;
+		text-align: center;
+		font-size: 2.5em;
+		padding-top: 49px;
+		position: relative;
+	}*/
 
 #first{
 	clear: left;
@@ -99,9 +119,8 @@ body{
 ***********************************************************/
 
 .sections{
-	background: ; 
-	height: 700px; 
-	width: 100%; 
+		height: 900px; 
+		width: 100%; 
 }
 
 
@@ -121,7 +140,7 @@ body{
 		padding: 300px 10px 100px 20px;
 		margin-top: -200px;
 		display: none;
-		background: #00ff00 url('../img/road.jpg') no-repeat fixed center;
+		background: #000 url('../img/road.jpg') no-repeat fixed center;
 	}
 
 	#mission, #words{
@@ -194,7 +213,7 @@ body{
 #skillz{
 	padding: 100px 10px; 
 	margin:  auto;
-	background: #00ff00 url('../img/blackboard.jpg') no-repeat fixed center;
+	background: #000 url('../img/blackboard.jpg') no-repeat fixed center;
 }
 
 #description_container{
@@ -240,25 +259,37 @@ body{
 }
 
 
+
 /***********************************************************
 			Experience - Timeline 
 ***********************************************************/
 	#experience{
-		background: #00ff00 url('../img/grid_02.jpg') repeat fixed center;	
+		background: #000 url('../img/grid_02.jpg') repeat fixed center;	
 	}
+
+	#experience h1{
+		margin: auto;
+		text-align: center;
+		font-size: 2.5em;
+		padding-top: 49px;
+		position: relative;
+	}
+
+
+
 
 /***********************************************************
 			Dev Stack 
 ***********************************************************/
 	#dev_stack{
-		background: #00ff00 url('../img/type_building.jpg') no-repeat fixed center;
+		background: #000 url('../img/type_building.jpg') no-repeat fixed center;
 	}
 /***********************************************************
 			About 
 ***********************************************************/
 
 	#about{
-		background: #00ff00 url('../img/cycle_lane.jpg') no-repeat fixed center;
+		background: #000 url('../img/cycle_lane.jpg') no-repeat fixed center;
 	}
 
 
