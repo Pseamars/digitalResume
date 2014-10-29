@@ -1,5 +1,4 @@
 /* Moves profile pic */
-
 $("#profile_pic").css("left", "-700px").animate(
 	{left: 0}, 
 	2000, 
@@ -8,44 +7,51 @@ $("#profile_pic").css("left", "-700px").animate(
 		console.log("I work!!");	
 	});
  
- //shows and hides header
- var didScroll; 
- var lastScrollTop = 0;
- var delta = 5;
- var navbarHeight = $("#header div").outerHeight();
-
- //tell interval fnx know the user has scrolled
- $(window).scroll(function(event) {
- 	didScroll = true;
- }); 
-
- //run hasScrolled()and reset didScroll 
- setInterval(function () {
- 	if(didScroll){
- 		hasScrolled();
- 		didScroll = false;
- 	}
- }, 250);
-
- function hasScrolled () {
- 	var st = $(this).scrollTop();
- 	if(Math.abs(lastScrollTop - st)<=delta)
- 		return;
- 	if(st > lastScrollTop && st > navbarHeight){
- 		$("#header div").removeClass('nav-down').addClass('nav-up');
- 	}else{
- 		if(st + $(window).height() < $(document).height()){
- 			$('#header div').removeClass('nav-up').addClass('nav-down')
- 		}
- 	}
+// Hide Header on on scroll down
+var didScroll; 
+var lastScrollTop = 0; 
+var delta = 5; 
 
 
- };
+var headerHeight = $("header").outerHeight(); 
 
-// Fades goal background
-$("#goalContainer").fadeIn(2000, function(){
-	console.log("I am done animating")
+$(window).scroll(function(event) {
+    didScroll = true; 
 });
+
+setInterval(function(argument) {
+    if(didScroll){
+        hasScrolled(); 
+        didScroll = false;
+    }
+}, 250); 
+
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > headerHeight){
+        // Scroll Down
+        $('header').hide("slow"); //hide rather than fadeOut
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').show("slow");
+        }
+    }
+    
+    lastScrollTop = st;
+}
+// Fades goal background
+// $("#goalContainer").fadeIn(2000, function(){
+// 	console.log("I am done animating")
+// });
 
 // Begin Skillz requests
 //create AJAX request

@@ -1,13 +1,13 @@
 // var addText = document.getElementById('overlay');// var $addText = $('#lifeEvents ul'); 
 
 
-var tuscany = "My first Job"; 
-var keg = "I worked here for a little while";
-var metro = "Where I went to college";
-var natasha = "When I met my hot wife";
-var dob = "I was born";
-var jefferson = "I was a tutor";
-var manual = "I witnessed the horrors of teaching";
+var tuscany = "My first Job. I grew up at the Tuscany Tavern. I moved up from bus boy to barender in the front of the house and from dishwasher to running the kitchen a few nights a week in the back of the house. There was no position I did not hold at this restaurant. I learned about work ethic and what it means to do a quality job here. I also grew up socially and gained many perspectives that were vastly different from my own. I moved on from the Tuscany Tavern after having worked there for 8 years to essentially 'leave the nest'."; 
+var keg = "I first worked at the Keg as a bar back, winning an award for 'Best Bar Back 2007'. I eventually moved up to a bartender for a short period and spent the majority of my time as a server. I also trained new staff and helped with the formation of a charity group within the restaurant. I learned a lot about myself and customer service with this experience, especially about sales. I quit when I graduated college because I was about to begin teaching.";
+var metro = "I graduated from Metro State University of Denver in May of 2012. I achieved a 3.77 GPA with a degree in Spanish and a teaching certificate for K-12 education. This is particularly impressive because I did not graduate high school and am the first in my family to graduate college. I particularly enjoyed classes in the humanities and was pleasantly surprised by a sparked interest in math and science.";
+var natasha = "This is when I met my hot wife. She is what drives me and what grounds me.";
+var dob = "I was born in Wheat Ridge, Colorado";
+var jefferson = "I was a tutor for the AVID tutoring program. In this position I helped students with their homework, not through giving them the answer, but rather through an inquiry process modelled after the Socratic Method. I learned the importance of developing meaningful relationships with students and colleagues as well as that guiding people to the answer is much more powerful than giving them the answer.";
+var manual = "I taught Spanish as a Foreign language, Spanish Heritage and ESL. I created my own curriculum for each of these sections and developed my own standards based assessments. I was also the Technology and Google Champion, teaching with 1:1 devices in my classroom, and also hosted professional development sessions that tutored teachers on how to use technology in the classroom. In addition to my work as a teacher, I participated in several optional professional development opportunities and commitees. I gained many skills and insights from this position that have greatly influenced my abilities and ambitions.";
 
 $("#dob").click(function(event){
 	$("#overlay").show();

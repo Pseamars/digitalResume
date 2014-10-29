@@ -28,19 +28,22 @@ body{
 }
 
 
-#header div{
+#ps{
 	width:100%;
 	height: 100px;
 	position: fixed;
 	z-index: 1000;
 	top:0;
-	transition: top 0.2 ease-in-out;
+	
 	background: rgba(40,40,40,.3);
 }
 
 .nav-up{
 	top: -100px;
+	transition: top 2s ease-in-out;
 }
+
+
 
 #header div h1{ /* I want to get the h1s to align center to the div */
 	margin: auto;
@@ -97,17 +100,30 @@ body{
 #header_nav a{
 	display: inline-block;
 	position: relative;
-	margin: 125px auto 0px 10px;
+	margin: 0px .5%;
+	top: -65px;
 	text-align: center;
-	width: 23%;
+	vertical-align: top;
+	width: 13%;
 	padding: 2px 4px;
-	border-right: 1px solid black;
-	text-decoration: none;
+/*	border-right: 1px solid black;
+*/	text-decoration: none;
 	color: white;	
-	background: rgba(40,40,40,.3);
-	font-size: 1.35em; 
+/*	background: rgba(40,40,40,.3);
+*/	font-size: 1.3em; 
 	font-family: 'Cantata One', serif;
 	z-index:101;
+}
+
+#header_nav a:hover{
+	transition-duration: 0.3s;
+	transition-property:transform;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.nav_right{
+	float:right;
 }
 
 #header_nav a:last-Child{
@@ -121,6 +137,7 @@ body{
 .sections{
 		height: 900px; 
 		width: 100%; 
+		padding-top: 10px;
 }
 
 
@@ -134,22 +151,24 @@ body{
 /***********************************************************
 			Quote and Goal 
 ***********************************************************/
+
+
 	#goalContainer {
 		width: 100%; 
-		height: 700px;
-		padding: 300px 10px 100px 20px;
+		height: 100%;
+		padding-top: 250px;
 		margin-top: -200px;
-		display: none;
 		background: #000 url('../img/road.jpg') no-repeat fixed center;
 	}
 
 	#mission, #words{
-		font-size: 2em;
+		font-size: 2.5em;
 		color: antiquewhite;
 		width: 48%;
 		display: inline-block;
 		margin: 15px 00px 0px 00px;
 		padding: 10px;
+		border-radius: 5%;
 		text-align: center;
 		background: rgba(122,122,122,.6);
 		
@@ -166,7 +185,7 @@ body{
 		height: 75%;
 		margin: 30px; 
 		padding: 15px; 
-		font-size: 1.75em; 
+		font-size: 2em; 
 		display: inline-block;
 		font-weight: bold;
 		line-height: 1.25em;
