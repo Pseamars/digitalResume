@@ -17,6 +17,9 @@ body{
 
 /***********************************************************
 			HEADER
+
+		For smaller Screens - 
+			I would like to keep the image and my name, perhaps not the bounce. I also think that something needs to be done with the nav, but I'm not sure what yet. 
 ***********************************************************/
 #header{
 	margin: auto; 
@@ -32,9 +35,8 @@ body{
 	width:100%;
 	height: 100px;
 	position: fixed;
-	z-index: 1000;
+	z-index: 200;
 	top:0;
-	
 	background: rgba(40,40,40,.3);
 }
 
@@ -150,6 +152,9 @@ body{
 
 /***********************************************************
 			Quote and Goal 
+
+	For smaller screens - 
+	I would like to have the quote and goals combined on one virtual flip card and on a tap, then the other one is visible, like two sides of a coin. 		
 ***********************************************************/
 
 
@@ -227,6 +232,9 @@ body{
  	
 /***********************************************************
 			Skillz 
+
+		For smaller Screens - 
+			Just make them fit, maybe by stacking 3x2 
 ***********************************************************/
 
 #skillz{
@@ -248,7 +256,7 @@ body{
 
 
 #badge_container{
-	width: 90%;
+	width: 100%;
 	height: 100px;
 	margin: 20px auto; 
 	padding: 25px;
@@ -256,14 +264,15 @@ body{
 }
 
 .skillz_badge{
-	width: 15%; 
+	width: 13%; 
 	height: 100%;
 	background: antiquewhite; 
 	border-radius: 50%; 
 	box-shadow: 10px 10px 2px black;
-	display: inline-block;
+	display: block;
+	float: left;
 	padding: 0 10px;
-	margin: 0px 10px;
+	margin: 0px 20px;
 	left:100px;
 	position: relative;
 	text-align: center; 
@@ -281,6 +290,8 @@ body{
 
 /***********************************************************
 			Experience - Timeline 
+
+			Maybe by making it go vertical rather than horizonatl? Also, the dates need to move in conjuction with the events. Scrollable?
 ***********************************************************/
 	#experience{
 		background: #000 url('../img/grid_02.jpg') repeat fixed center;	
@@ -302,7 +313,9 @@ body{
 ***********************************************************/
 	#dev_stack{
 		background: #000 url('../img/type_building.jpg') no-repeat fixed center;
+		color: antiquewhite;
 	}
+
 /***********************************************************
 			About 
 ***********************************************************/
@@ -311,4 +324,23 @@ body{
 		background: #000 url('../img/cycle_lane.jpg') no-repeat fixed center;
 	}
 
+/***********************************************************
+			Footer 
+***********************************************************/
+
+#footer{
+	background: rgba(40,40,40,.3);
+	color: antiquewhite;
+	position: fixed;
+	bottom:0;
+	z-index: 201;
+	width: 100%;
+	height: 20px;
+}
+
+#footer #copy,#time{
+	display: inline-block;
+	padding:0px 5px;
+	margin: 0px 15px;
+}
 
