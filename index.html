@@ -15,7 +15,7 @@
 			<header id="header">
 				<div id="ps" class="nav-down">
 					<h1 id="first">Patrick</h1>
-					<img src="img/profile_photo_nerd.jpg" id="profile_pic">
+					<a href="#"><img src="img/profile_photo_nerd.jpg" id="profile_pic"></a>
 					<h1 id="last">Seamars</h1>					
 				
 				<nav id="header_nav">
@@ -109,12 +109,48 @@
 			</section> <!-- End Timeline -->
 			
 
-			<section id="dev_stack"  class="sections" ><h1>I was going to do a pie-chart here, but that makes no sense, so instead I will put a thumbnail gallery that links to apps that I have created</h1></section> <!-- Pie Chart or gauge.js
+			<section id="dev_stack"  class="sections" ><h1>I was going to do a pie-chart here, but that makes no sense, so instead I will put a thumbnail gallery that links to apps that I have created</h1> <!-- Pie Chart or gauge.js
 			-->
-			<section id="about" class="sections" ></section> <!-- Add twitter feed 
+			<div id="exp_galleryContainer">
+						<ul>
+							<a href="apps/todo_index.html"><li>
+								<div class="exp_gallery"><img src="img/todo_app.png"></div>
+							</li></a>
+							<li>
+								<div class="exp_gallery">2</div>
+							</li>
+							<li>
+								<div class="exp_gallery">3</div>
+							</li>
+							<li>
+								<div class="exp_gallery">4</div>
+							</li>
+							<li>
+								<div class="exp_gallery">5</div>
+							</li>
+							<li>
+								<div class="exp_gallery">6</div>
+							</li>
+						</ul></div>
+			</section>
+			<section id="about" class="sections" >
+				<div class="feeds">
+				<h1>I'm on the twitters</h1>
+				<a class="twitter-timeline" href="https://twitter.com/PatrickdotIO" data-widget-id="528237231656300544">Tweets by @PatrickdotIO</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				<div class="feeds">
+					<h1>I love to ride</h1>
+					<!--rides -->
+					<iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='http://www.strava.com/athletes/1163412/latest-rides/90f7bf53e867332a94ebe9e326ccd54269508b52'></iframe>
+					<!--summary-->
+					<!-- <iframe height='400' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='http://www.strava.com/athletes/1163412/activity-summary/90f7bf53e867332a94ebe9e326ccd54269508b52'></iframe> -->
+				</div>
+			</section> <!-- Add twitter feed 
 			-->
 		<div id="footer">
 			<span id="copy"style="float:left; margin: 0px 20px;">Copyright</span>
+			<span id="weather" style="float:left; margin: 0px 200px;">The weather </span>
 			<span id="time" style="margin 0px 20px; float:right;">Time</span>
 			
 		</div>
