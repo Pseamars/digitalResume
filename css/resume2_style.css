@@ -4,14 +4,19 @@
 
 @import url(http://fonts.googleapis.com/css?family=Cantata+One|Amatic+SC);
 
+html{
+	width: 100%;
+	height: 100%;
+}
+
 body{
-	max-width: 100%;
+	width: 100%;
 	margin: auto; 
 	font-family: 'Cantata One', serif;
 } 
 
 #wrapper {
-	max-width: 100%; 
+	width: 100%; 
 }
 
 
@@ -377,4 +382,6 @@ body{
 	padding:0px 5px;
 	margin: 0px 15px;
 }
+
+
 

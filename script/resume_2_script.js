@@ -119,8 +119,20 @@ $(document).ready( function() {
 });
 
 
-//var currentTime = hours+":"+minutes+" "+meridien;
+//Weather
+jQuery(document).ready(function displayWeather($) {
+  $.ajax({
+  url : "http://api.wunderground.com/api/bdd06975606e33d1/geolookup/conditions/q/IA/Cedar_Rapids.json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json['location']['city'];
+  var temp_f = parsed_json['current_observation']['temp_f'];
+  return "Current temperature in " + location + " is: " + temp_f;
+  }
+  });
+});
 
+$('weather').innerText(displayWeather);
 
 
 
