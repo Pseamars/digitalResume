@@ -105,11 +105,11 @@ $(document).ready( function() {
         hours = 12;
     }
     // This gets a "handle" to the clock div in our HTML
-    var clockDiv = document.getElementById("time");
+    var $clockDiv = $("#time");
 
     // Then we set the text inside the clock div 
     // to the hours, minutes, and seconds of the current time
-    clockDiv.innerText = hours + ":" + minutes + " "+meridien;
+    $clockDiv.text(hours + ":" + minutes + " "+meridien);
 
   }
 
@@ -120,7 +120,9 @@ $(document).ready( function() {
 
 
 //Weather
-jQuery(document).ready(function displayWeather($) {
+
+
+$(function displayWeather($) {
   $.ajax({
   url : "http://api.wunderground.com/api/bdd06975606e33d1/geolookup/conditions/q/IA/Cedar_Rapids.json",
   dataType : "jsonp",
@@ -128,11 +130,13 @@ jQuery(document).ready(function displayWeather($) {
   var location = parsed_json['location']['city'];
   var temp_f = parsed_json['current_observation']['temp_f'];
   return "Current temperature in " + location + " is: " + temp_f;
+  var $theWeather = $('#weather');
+  $theWeather.text("hi");
   }
   });
 });
 
-$('weather').innerText(displayWeather);
+
 
 
 

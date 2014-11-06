@@ -52,7 +52,7 @@ body{
 
 
 
-#header div h1{ /* I want to get the h1s to align center to the div */
+#header div p{ /* I want to get the h1s to align center to the div */
 	margin: auto;
 	padding: 10px 25px;
 	font-weight: bold;
