@@ -5,11 +5,15 @@
 	background: transparent; 
 }
 
+ul{
+	width: 100%;
+}
+
 ul li{
 	list-style: none; 
 	line-height: 1em; 
 	display: inline-block;
-	margin: auto 10px;
+	margin: auto 2%;
 }
 
 a {
@@ -22,7 +26,8 @@ a {
 
 #timelineContainer{
 	padding-top: 200px;
-	width: 100%; 
+	width: 90%; 
+	margin: 10px auto;
 	height: 200px; 
 	background-color: transparent;
 }
@@ -71,41 +76,37 @@ a {
 ***********************************************/
 
 
-#dob{
-	margin-left: 60px;
-	margin-top: 190px;
-}
 
 #natasha{
-	margin-top: 35px;
-	margin-left: -175px;
+	margin-top: 6%;
+	margin-left: -23%;
 	position: absolute;
 }
 
 #tuscany{
-	margin-left: 600px; 
-	width: 260px; 
+	margin-left: 0%; 
+	width: 44%; 
 }
 
 #keg{
-	margin-left: 850px; 
-	width: 200px;
+	margin-left: 45%; 
+	width: 28%;
 }
 
 #jefferson{
-	margin-left: 930px; 
-	width:100px;
+	margin-left: 55%; 
+	width:16%;
 }
 
 #manual{
-	margin-left: 1050px; 
-	width: 75px;
+	margin-left: 73%; 
+	width: 10%;
 }
 
 
 #metro{
-	margin-left: 930px; 
-	width: 110px; 
+	margin-left: 55%; 
+	width: 17%; 
 }
 
 #overlay {

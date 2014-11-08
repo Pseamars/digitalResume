@@ -51,6 +51,26 @@ $("#overlay").click(function(){
 });
 
 
+
+//I want this to work without me having to use a switch statement, retrieving the value on click 
+
+// $('#lifeEvents').on('click', 'lifeEvents.li', function (event) {
+// 	var key = $(event.target)[0].id;
+// 	var content = $(this).value();
+	
+		
+// 	}
+
+// 	$("#overlay").show();
+//  	return overlay.textContent = content;
+// 	console.log(content);
+// })
+
+
+
+
+// The one below works
+
 $('#lifeEvents').on('click', function (event) {
 	var key = $(event.target)[0].id;
 	var content;
@@ -60,6 +80,21 @@ $('#lifeEvents').on('click', function (event) {
 		break;
 		case "keg":
 		content = lifeEvents.keg;
+		break;
+		case "jefferson":
+		content = lifeEvents.jefferson;
+		break;
+		case "manual":
+		content = lifeEvents.manual;
+		break;
+		case "metro":
+		content = lifeEvents.metro;
+		break;
+		case "dob":
+		content = lifeEvents.dob;
+		break;
+		case "natasha":
+		content = lifeEvents.natasha;
 		break;
 		
 	}
