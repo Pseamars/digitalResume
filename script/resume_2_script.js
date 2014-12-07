@@ -83,7 +83,7 @@ var today = new Date();
 //Copyright
 var year = today.getFullYear();
 var footDate = document.getElementById('copy'); 
-footDate.innerHTML = "Copyright &copy " + year;
+footDate.innerHTML = "Copyright &copy; " +"Patrick Seamars" + year;
 //Current time
 
 $(document).ready( function() {
