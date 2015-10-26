@@ -1,0 +1,9 @@
+/* line 2, ../sass/screen.scss */
+.row {
+  border: 1px dashed black;
+}
+
+/* line 6, ../sass/screen.scss */
+.col {
+  border: 1px dotted pink;
+}
